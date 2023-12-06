@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+
+    <link rel="stylesheet" href="styleprincipal.css">
+</head>
+<body>
+    <!--
+        Este código representa la sección de encabezado del sitio web.
+        Incluye el logotipo y el menú de navegación.
+        El menú de navegación contiene enlaces a diferentes páginas del sitio web.
+    -->
+    <header class="cont_encabezado">
+        <div class="logo">
+            <h2 class="nombre">CROSS WOLRD</h2>
+        </div>
+        <nav>
+            <a href="index.html" class="enlace">INICIO</a>
+            <a href="tuning.html" class="enlace">TUNING</a>
+            <a href="productos.html" class="enlace">PRODUCTOS</a>
+            <a href="nosotros.html" class="enlace">NOSOTROS</a>
+            <a href="login.html" class="enlace">LOGIN</a>
+        </nav> 
+    </header>
+
+    <!--
+        Este código representa un componente de carrusel con múltiples diapositivas.
+        Cada diapositiva contiene una imagen, una superposición y un contenedor de texto.
+        El carrusel permite a los usuarios navegar entre diapositivas utilizando botones anteriores y próximos.
+    -->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+            <div class="carousel-item active position-relative">
+                <img src="IMG/img1.1.jpg" class="d-block img-fluid w-100" alt="...">
+                <div class="overlay"></div>
+                <div class="text-container">
+                    <!-- Contenido de texto -->
+                    <h2>Rendimiento y estilo en cada curva</h2>
+                </div>
+            </div>
+            <div class="carousel-item active position-relative">
+                <img src="IMG/alina-rubo-0UPXpeKTCtc-unsplash (1).jpg" class="d-block img-fluid w-100" alt="...">
+                <div class="overlay"></div>
+                <div class="text-container2">
+                    <!-- Contenido de texto -->
+                    <h2>Vive la adrenalina sobre dos ruedas</h2>
+                </div>
+            </div>
+            <div class="carousel-item active position-relative">
+                <img src="IMG/motocross-4948269_1920-fotor-2023120417185 (1) (1).jpg" class="d-block img-fluid w-100" alt="...">
+                <div class="overlay"></div>
+                <div class="text-container3">
+                    <!-- Contenido de texto -->
+                    <h2>Equipos de motocross para aventuras sin límites</h2>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+    <section class="conteiner_cont">
+        <!-- 
+            Este código HTML representa una sección de una página web que muestra diferentes botones relacionados con el motocross.
+            Cada botón tiene un propósito único y se acompaña de un Popover que proporciona información adicional.
+            Los botones permiten a los usuarios personalizar sus motocicletas, comprar piezas de alta calidad y expresar su amor por las motocicletas y el motocross.
+            El código está estructurado utilizando clases de arranque para el diseño receptivo.
+        -->
+        <div class="cont" >
+            <div class="txt_cont">
+                <h1 class="titulo_cont">ECHA UN VISTAZO</h1>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="container text-center">
+                <div class="row justify-content-around">
+                    <div class="col-4">
+                        <button type="button" class="btn btn-lg btn-warning" data-bs-toggle="popover" data-bs-placement="top"  data-bs-content="En CROSS WOLRD, no solo vendemos equipos de motocross, te invitamos a personalizar tu experiencia sobre dos ruedas. ¿Te gustaría tunear a tu estilo tu moto y transformarla en una extensión de tu personalidad? ¡Descubre el mundo del tuning con nosotros!">Te gustaria tunear a tu estilo tu moto?</button>
+                    </div>
+                    <div class="col-4">
+                        <button type="button" class="btn btn-lg btn-warning" data-bs-toggle="popover"  data-bs-content="¿Buscas partes de primera calidad para mejorar el rendimiento de tu moto? En CROSS WOLRD, ofrecemos una selección exclusiva de piezas que llevarán tu moto al siguiente nivel. Descubre las mejores opciones para potenciar tu máquina y disfrutar de un MotoCross sin límites.">Quieres comprar partes para mejorar tu moto?</button>
+                    </div>  
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="row justify-content-evenly">
+                    <div class="col-4">
+                        <button type="button" class="btn btn-lg btn-warning" data-bs-toggle="popover"  data-bs-content="Si amas las motos tanto como nosotros, estás en el lugar correcto. En CROSS WOLRD, compartimos tu pasión por las dos ruedas y te ofrecemos lo mejor en equipos y accesorios para que disfrutes de cada kilómetro con estilo.">Te gustan las motos?</button>
+                    </div>
+                    <div class="col-4">
+                        <button type="button" class="btn btn-warning" data-bs-toggle="popover"  data-bs-content="¿Eres un verdadero amante del MotoCross? En CROSS WOLRD, entendemos tu espíritu intrépido y ofrecemos todo lo que necesitas para vivir esa pasión al máximo. Descubre nuestra gama de productos diseñados para los auténticos aficionados del MotoCross.">Eres amante del MotoCross?</button>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tuning">
+        <!--
+            Este código representa una sección de una página web dedicada a mostrar un servicio de ajuste para motocicletas.
+            Incluye un encabezado, una descripción y un botón para navegar hasta la página de ajuste.
+            La sección también incluye una imagen que complementa el contenido.
+        -->
+        <div class="conteiner_tuning">
+            <div class="tuning_txt">
+                <h1 class="titulo">TUNING</h1>
+                <p class="txt">Da vida a tu moto con nuestro exclusivo servicio de tuning. Transforma cada detalle y convierte tu moto en una obra maestra personalizada que refleje tu estilo único.</p>
+                <a href="tuning.html" class="boton">vamos!</a>
+            </div>
+            <img class="useImg" src="IMG/erik-mclean-Bl0TW2OV2Wg-unsplash.jpg">
+        </div>
+    </section>
+
+    <!--
+        Este código representa una sección de un archivo HTML que muestra un video y algún contenido de texto.
+        El video está configurado en autoplay, silenciado y enrollado.Si el formato de video no es compatible con el navegador,
+        Se muestra un mensaje respaldo.
+        La imagen y el contenido del texto se comentan y no se muestran actualmente.
+    -->
+    <div class="espacioImg">
+        <video autoplay muted loop>
+            <source src="IMG/pexels-c-technical-5803089 (2160p).mp4" type="video/mp4">
+            Tu navegador no soporta el tag de video.  
+          </video>
+        <!-- <img class="imgpubli" src="IMG/motocross-4948269_1920.jpg"> -->
+        <h1 class="titulopubli">NO LO DUDES!</h1>
+        <p class="parrafopubli">En CROSS WOLRD encontraras todo lo que necesitas</p>
+    </div>
+
+
+    <!--
+        Este código representa una sección de una página web que muestra información sobre productos.
+        Incluye un contenedor con una imagen, un título, una descripción y un botón para navegar a otra página.
+        La imagen se obtiene de la carpeta "IMG" y tiene un texto alternativo.
+        El título se muestra como un elemento de encabezado 2 (H2).
+        La descripción se muestra como un elemento de párrafo (P).
+        El botón es un enlace que redirige a la página "productos.html".
+    -->
+    <div class="container-produc">
+        <div class="img-produc">
+          <img src="IMG/jusdevoyage-ZAFpiVgZNng-unsplash.jpg" alt="Descripción de la imagen">
+        </div>
+        <div class="txt-produc">
+          <h2 class="titulo">PRODUCTOS</h2>
+          <p class="txt">En CROSS WOLRD, sabemos que tu moto es más que una simple máquina: es una extensión de tu personalidad y tu espíritu aventurero. Por eso, te ofrecemos una amplia gama de productos meticulosamente seleccionados, desde mejoras de rendimiento hasta equipos de seguridad y estilo. Descubre la diferencia en cada detalle, y experimenta el motocross de una manera totalmente nueva. Explora, elige, compra en CROSS WOLRD.</p>
+          <a href="productos.html" class="boton">vamos!</a>
+        </div>
+    </div>
+
+    <section class="conteiner_categoria">
+        <!-- 
+            Este código HTML representa una sección de una página web que muestra diferentes categorías.
+            Cada categoría está representada por un elemento DIV con la clase "Categoria".
+            Dentro de cada categoría Div, hay una imagen, un encabezado, un párrafo y un enlace.
+            La imagen representa la categoría, el encabezado es el nombre de la categoría, el párrafo es una descripción y el enlace es para más información.
+        -->
+        <div class="conteiner_cat">
+            <h1 class="titulo-categoria">CATEGORIAS</h1>
+            <div class="categoria">
+                <img src="IMG/moto1.jpg" class="cateImg">
+                <h2 class="titulo">MOTOS</h2>
+                <p class="txt">En CROSS WOLRD podras equipar tu pasión con estilo y seguridad</p>
+                <a href="productos.html" class="boton">Ver más</a>
+            </div>
+        
+            <div class="categoria">
+                <img src="IMG/equipo1.jpg" class="cateImg">
+                <h2 class="titulo">EQUIPO</h2>
+                <p class="txt">Nuestras motos ofrecen un rendimiento excepcional y un diseño audaz</p>
+                <a href="productos.html" class="boton">Ver más</a>
+            </div>
+        
+            <div class="categoria">
+                <img src="IMG/mejora1.jpeg" class="cateImg">
+                <h2 class="titulo">MEJORA</h2>
+                <p class="txt">Potencia tu máquina con nuestras mejoras de alto rendimiento</p>
+                <a href="productos.html" class="boton">Ver más</a>
+            </div>
+
+            <div class="categoria">
+                <img src="IMG/repuesto1.jpeg" class="cateImg">
+                <h2 class="titulo">REPUESTO</h2>
+                <p class="txt">Mantén tu moto en su mejor forma con nuestra selección de repuestos</p>
+                <a href="productos.html" class="boton">Ver más</a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="conteiner_oferta">
+
+
+        <!-- 
+            Este código representa una sección de una página web que muestra un carrusel de productos.
+            Cada producto está representado por un elemento deslizante de deslizamiento, que contiene información como el precio, el nombre, la descripción y una imagen.
+            Los productos se muestran de manera receptiva e interactiva utilizando la biblioteca de Swiper.
+            Cada producto también tiene un botón "Commar" que redirige al usuario a una página "ProductOS.html".
+        -->
+        <div class="swiper mySwiper">
+            <h1 class="titulo-ofer">Mas vendido</h1>           
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="icon">
+                        <i class="fa-solid fa-circle-arrow-left"></i>
+                        <img src="IMG/Honda-Logo.jpg">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+    
+                    <div class="product-content">
+                        <div class="product-txt">
+                            <span>$1500</span>
+                            <h3>CRF 125</h3>
+                            <p>Experimenta la potencia y la emoción desbordante </p>
+                        </div>
+                        <div class="product-img">
+                            <img src="IMG/crf125.png">
+                        </div>
+                    </div>
+                    <a href="productos.html" class="btn-1">Comprar</a>
+                </div> 
+    
+                <div class="swiper-slide">
+                        <div class="icon">
+                            <i class="fa-solid fa-circle-arrow-left"></i>
+                            <img src="IMG/Fox-Racing-Logo.png">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+    
+                        <div class="product-content">
+                            <div class="product-txt">
+                                <span>$80</span>
+                                <h3>Botas FOX</h3>
+                                <p>Domina cada sendero con las botas Fox</p>
+                            </div>
+                            <div class="product-img">
+                                <img src="IMG/botas.png">
+                            </div>
+                        </div>
+                        <a href="productos.html" class="btn-1">Comprar</a>
+                </div> 
+    
+                <div class="swiper-slide">
+                        <div class="icon">
+                            <i class="fa-solid fa-circle-arrow-left"></i>
+                            <img src="IMG/protaper_logo.png">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+    
+                        <div class="product-content">
+                            <div class="product-txt">
+                                <span>$55</span>
+                                <h3>Casco pere</h3>
+                                <p>Protección y estilo se fusionan en el casco ProTaper</p>
+                            </div>
+                            <div class="product-img">
+                                <img src="IMG/casco.jpg">
+                            </div>
+                        </div>
+                        <a href="productos.html" class="btn-1">Comprar</a>
+                    </div> 
+    
+                <div class="swiper-slide">
+                        <div class="icon">
+                            <i class="fa-solid fa-circle-arrow-left"></i>
+                            <img src="IMG/Yamaha-Logo-1967.jpg">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+    
+                        <div class="product-content">
+                            <div class="product-txt">
+                                <span>$70</span>
+                                <h3>Casco troca</h3>
+                                <p>Siente la libertad con el casco Yamaha, un compañero de confianza en cada viaje</p>
+                            </div>
+                            <div class="product-img">
+                                <img src="IMG/casco.png">
+                            </div>
+                        </div>
+                        <a href="productos.html" class="btn-1">Comprar</a>
+                </div> 
+    
+                <div class="swiper-slide">
+                        <div class="icon">
+                            <i class="fa-solid fa-circle-arrow-left"></i>
+                            <img src="IMG/Fox-Racing-Logo.png">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+    
+                        <div class="product-content">
+                            <div class="product-txt">
+                                <span>$180</span>
+                                <h3>Escape tuit</h3>
+                                <p>oLibera el rugido de tu moto con el escape Fox</p>
+                            </div>
+                            <div class="product-img">
+                                <img src="IMG/escape.png">
+                            </div>
+                        </div>
+                        <a href="productos.html" class="btn-1">Comprar</a>
+                </div> 
+    
+                <div class="swiper-slide">
+                        <div class="icon">
+                            <i class="fa-solid fa-circle-arrow-left"></i>
+                            <img src="IMG/KTM-Logo.svg.png">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+    
+                        <div class="product-content">
+                            <div class="product-txt">
+                                <span>$30</span>
+                                <h3>Protector de mano</h3>
+                                <p>Domina el terreno áspero con el protector de mano KTM</p>
+                            </div>
+                            <div class="product-img">
+                                <img src="IMG/guardamanos.jpg">
+                            </div>
+                        </div>
+                        <a href="productos.html" class="btn-1">Comprar</a>
+                </div> 
+    
+                <div class="swiper-slide">
+                        <div class="icon">
+                            <i class="fa-solid fa-circle-arrow-left"></i>
+                            <img src="IMG/logo-circuit.png">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+    
+                        <div class="product-content">
+                            <div class="product-txt">
+                                <span>$120</span>
+                                <h3>Ruedas Circuit</h3>
+                                <p>Desata la velocidad con las ruedas Circuit, un equilibrio perfecto entre rendimiento</p>
+                            </div>
+                            <div class="product-img">
+                                <img src="IMG/llantas.png">
+                            </div>
+                        </div>
+                        <a href="productos.html" class="btn-1">Comprar</a>
+                </div> 
+    
+                <div class="swiper-slide">
+                        <div class="icon">
+                            <i class="fa-solid fa-circle-arrow-left"></i>
+                            <img src="IMG/protaper_logo.png">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+    
+                        <div class="product-content">
+                            <div class="product-txt">
+                                <span>$2500</span>
+                                <h3>Protaper 250</h3>
+                                <p>La moto ProTaper, una obra maestra de potencia y maniobrabilidad</p>
+                            </div>
+                            <div class="product-img">
+                                <img src="IMG/yz125.jpg">
+                            </div>
+                        </div>
+                        <a href="productos.html" class="btn-1">Comprar</a>
+                </div> 
+    
+                <div class="swiper-slide">
+                        <div class="icon">
+                            <i class="fa-solid fa-circle-arrow-left"></i>
+                            <img src="IMG/Fox-Racing-Logo.png">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+    
+                        <div class="product-content">
+                            <div class="product-txt">
+                                <span>$3500</span>
+                                <h3>Motor 230</h3>
+                                <p>El motor 230 Fox, una fuente inagotable de potencia y rendimiento</p>
+                            </div>
+                            <div class="product-img">
+                                <img src="IMG/motorcrf230.jpg">
+                            </div>
+                        </div>
+                        <a href="productos.html" class="btn-1">Comprar</a>
+                </div> 
+    
+            </div>        
+        </div>
+    </section>
+
+    <!-- 
+        Este código representa una sección de un archivo HTML que muestra un video con un título y un párrafo.
+        El video está configurado en autoplay, silenciado y enrollado.Si el formato de video no es compatible con el navegador,
+        Se mostrará un mensaje respaldo.
+    -->
+    <div class="espacioImg">
+        <video autoplay muted loop>
+            <source src="IMG/pexels-c-technical-5803208 (2160p).mp4" type="video/mp4">
+            Tu navegador no soporta el tag de video.  
+          </video>
+        <h1 class="titulopubli">CONFIA EN NOSOTROS</h1>
+        <p class="parrafopubli">Confía en la Experiencia, Equípate con lo Mejor en Motocross</p>
+    </div>
+
+    <!--
+        Esta es la sección de pie de página de la página web.
+        Contiene información sobre el contacto con el propietario y el creador del sitio web.
+        El pie de página incluye enlaces a los perfiles de redes sociales del propietario.
+        El pie de página también incluye un aviso de derechos de autor.
+    -->
+
+    <footer class="pie_pagina">
+        <div class="pie">
+            <h2>Tienes alguna duda?</h2>
+            <p>Si tienes alguna duda, puedes contactarnos en cualquiera de mis redes sociales</p>
+            <div class="footer_social">
+                <a href="https://www.facebook.com/mirko.vargasfirmino.7?mibextid=ZbWKwL"><img src="ICON/icons8-facebook-500.png"class="footer_img"></a>
+                <a href="https://instagram.com/komir_vf8?igshid=OGQ5ZDc2ODk2ZA=="><img src="ICON/icons8-instagram-500.png"class="footer_img"></a>
+                <a href="https://x.com/komir_vf8?t=n2RDGhaEI3x84lbU1NIsDg&s=09"><img src="ICON/icons8-twitter-500.png"class="footer_img"></a>
+                <a href="https://wa.me/59172821145?text=Hola%20Cross%20Wolrd,%20me%20pueden%20ayudar?"><img src="ICON/icons8-whatsapp-500.png"class="footer_img"></a>
+            </div>
+            <p>
+                SITIO WEB CREADO POR &copy;MIRKO VARGAS :
+            </p>
+        </div>
+    </footer>
+
+
+
+
+    <!--
+        Este script contiene dos funciones: showcart y CloseBtn.
+        
+        - showcart (x): esta función se utiliza para mostrar el carrito configurando la propiedad de visualización del elemento con el ID "Products-ID" a "Bloquear".
+        
+        - CloseBtn (): esta función se usa para ocultar el CART configurando la propiedad de visualización del elemento con el ID "Products-ID" a "Ninguno".
+    -->
+    <script>
+        function showCart(x){
+            document.getElementById("products-id").style.display = "block";
+        }
+        function closeBtn(){
+             document.getElementById("products-id").style.display = "none";
+        }
+    </script>
+    <script src="principal.js" ></script>
+
+    <!-- librerias de bootstrap y jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <!-- 
+        Este script inicializa los componentes de arranque.
+        Selecciona todos los elementos con el atributo 'data-bs-bs-toggle = "popover"' y crea un popover para cada elemento.
+    -->
+    <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        });
+    </script>
+
+    <!-- 
+        Este script inicializa el componente de carrusel de Swiper.
+        Selecciona el elemento con la clase "mySwiper" y crea un carrusel para ese elemento.-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- 
+        Este script inicializa una instancia de swiper con las siguientes opciones:
+        - Efecto: "Flojo de cobertura" - establece el efecto para Coverflow
+        - GrabCursor: Verdadero - Habilita el cursor de Grab
+        - Centedslider: Verdadero - Centra el control deslizante
+        - SlidesPerView: "Auto" - establece el número de diapositivas por vista a Auto
+        - bucle: true - habilita el modo de bucle
+        - coverflowEffect: {
+            depth: 500 - sets the depth of the coverflow effect to 500
+            modifer: 1 - sets the modifier of the coverflow effect to 1
+            slidesShadows: true - enables the shadows for the slides
+            rotate: 0 - sets the rotation angle of the slides to 0
+            stretch: 0 - sets the stretch factor of the slides to 0
+        }
+    -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect : "coverflow",
+            grabCursor : true,
+            centeredSlider : true,
+            slidesPerView : "auto",
+            loop : true,
+            coverflowEffect : {
+                depth : 500,
+                modifer : 1,
+                slidesShadows : true,
+                rotate : 0,
+                stretch : 0,
+            }
+        });
+    </script>
+
+</body>
+</html>  

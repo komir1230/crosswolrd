@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loginCross</title>
+    <link rel="stylesheet" href="LoginStyle.css">
+    <link rel="stylesheet" href="principal.js">
+</head>
+<body>
+    <!--
+    Este código HTML representa un formulario de inicio de sesión para el sitio web "Cross World".
+    Incluye campos de entrada para el nombre del usuario, la ciudad, el número de teléfono y la dirección de correo electrónico.
+    El formulario también incluye un menú desplegable para seleccionar una ciudad desde una lista de opciones.
+    El usuario puede enviar el formulario haciendo clic en el botón "Enviar".
+    El formulario está contenido dentro de un DIV con la clase "Caja".
+    -->
+    <div class="caja">
+        <div class="login-image">
+            <img src="IMG/fondologin.jpg">
+        </div>
+
+        <div class="login-conteiner">
+            <h3 id="titulo">CROSS WORLD</h3>
+
+            <form>
+                <h4>NOMBRE:</h4>
+                <input type="text" placeholder="Ejemplo Juan, Pedro" required id="nombre">
+                <h4>CIUDAD:</h4>
+                <select class="miLista" required>
+                    <option value="" disabled selected>Ciudades</option>
+                    <option value="opcion2">Trinidad</option>
+                    <option value="opcion3">Santa Cruz</option>
+                    <option value="opcion2">El Alto</option>
+                    <option value="opcion3">La Paz</option>
+                    <option value="opcion2">Cochabamba</option>
+                    <option value="opcion3">Sucre</option>
+                    <option value="opcion2">Oruro</option>
+                    <option value="opcion3">Tarija</option>
+                    <option value="opcion2">Montero</option>
+                    <option value="opcion3">Quillacollo</option>
+                    <option value="opcion2">Riberalta</option>
+                    <option value="opcion3">Warnes</option>
+                </select>
+                <h4>TELEFONO:</h4>
+                <input type="text" placeholder="Ejemplo 72821145" required id="telefono">
+                <h4>CORREO ELECTRONICO:</h4>
+                <input type="text" placeholder="Ejemplo pepito@gmail.com" required id="correo">
+
+                <button class="boton" onclick="enviar()">ENVIAR</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+    /**
+     * Función para enviar los datos del formulario.
+     */
+
+    // funcion para enviar los datos del formulario
+    function enviar() {
+        var direccion = document.getElementById("nombre").value;
+        var tarjeta = document.getElementById("telefono").value;
+        var correo = document.getElementById("correo").value;
+    }
+    // condiciones
+    if (nombre && telefono && correo) {
+        alert("Datos Registrados");
+    }
+    </script>
+
+</body>
+</html>

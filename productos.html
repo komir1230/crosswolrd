@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+
+    <link rel="stylesheet" href="styleprincipal.css">
+    <link rel="stylesheet" href="styleProductos.css">
+</head>
+<body>
+    <!-- En esta sección, se encuentra el encabezado de la página, que incluye el nombre del sitio, un menú de navegación con enlaces a diferentes secciones y un contenedor para el carrito de compras. -->
+    <header class="cont_encabezado">
+        <div class="logo">
+            <h2 class="nombre">CROSS WOLRD</h2>
+        </div>
+        <nav>
+            <a href="index.html" class="enlace">INICIO</a>
+            <a href="tuning.html" class="enlace">TUNING</a>
+            <a href="productos.html" class="enlace">PRODUCTOS</a>
+            <a href="nosotros.html" class="enlace">NOSOTROS</a>
+            <a href="login.html" class="enlace">LOGIN</a>
+
+            <div class="header-section container">
+                <div>
+                    <img onclick="showCart(this)" class="cart" src="IMG/carrito-de-compras.png" alt="">
+                    <p class="count-product">0</p>
+                </div>
+                <div class="cart-products" id="products-id">
+                    <p class="close-btn" onclick="closeBtn()">X</p>
+                    <h3>Mi carrito</h3>
+                    <div class="card-items">
+                        <!-- <div class="item">
+                            <img src="./images/products/keyboard-1.jpg" alt="">
+                            <div class="item-content">
+                                <h5>name of product name of product name of product</h5>
+                                <h5 class="cart-price">45.50$</h5>
+                                <h6>Amount: 3</h6>
+                            </div>
+                            <span>X</span>
+                        </div>
+        
+                        <div class="item">
+                            <img src="./images/products/keyboard-1.jpg" alt="">
+                            <div class="item-content">
+                                <h5>name of product name of product name of product</h5>
+                                <h5 class="cart-price">45.50$</h5>
+                                <h6>Amount: 3</h6>
+                            </div>
+                            <span class="delete-product" data-id="">X</span>
+                        </div> -->
+                    </div>
+                    <h2>Total: $<strong class="price-total">0</strong></h2>
+                </div>
+            </div>
+        </nav> 
+    </header>
+
+    <!-- Esta sección contiene un contenedor con un video de fondo (o imagen) y un mensaje de bienvenida con un título y una descripción. -->
+    <div class="vid-conteiner">
+        <video autoplay muted loop>
+            <source src="IMG/pexels-c-technical-5803633 (2160p).mp4" type="video/mp4">
+            Tu navegador no soporta el tag de video.  
+          </video>
+        <!-- <img class="imgpubli" src="IMG/motocross-4948269_1920.jpg"> -->
+        <h1 class="titulo-vid">PRODUCTOS</h1>
+        <p class="txt-vid">Explora nuestra selección de productos de motocross, donde la pasión se encuentra con el rendimiento</p>
+        
+    </div>
+
+    <!-- Esta estructura se repite para cada sección de productos (EQUIPO, MOTOS, MEJORA, REPUESTO). Cada sección contiene un título, una descripción y una lista de productos. -->
+    <section class="conteiner-motos">
+        <div class="cont-motos">
+            <h2 class="titulo-motos">EQUIPO</h2>
+            <P class="txt-motos">Descubre el apartado de equipo en CROSS WORLD, donde la excelencia se encuentra con la funcionalidad. Desde cascos que son tu segunda piel hasta botas que te llevan a nuevas alturas, nuestro equipo de motocross está diseñado para aquellos que buscan más que una simple experiencia. Eleva tu rendimiento con la mejor calidad y estilo, porque en cada detalle, marcamos la diferencia. Bienvenido al mundo del motocross con el equipo que redefine tus límites</P>
+            <section class="containerProductos">
+                <div class="products">
+                    <div class="carts">
+                        <div>
+                            <img src="IMG/_f116ec10-f35e-4bfd-a88d-635f87ef82aa.jfif" alt="">
+                            <p><span>20</span>$</p>
+                        </div>
+                        <p class="title">Tempest Cataclysm Combo 3 En 1 Gaming Teclado</p>
+                        <a href="" data-id="1" class="btn-add-cart">add to cart</a>
+                    </div>
+                    <div class="carts">
+                        <div>
+                            <img src="IMG/_22d71147-7922-4827-a485-f85faae6fc19.jfif" alt="">
+                            <p><span>35</span>$</p>
+                        </div>
+                        <p class="title"> Newskill Suiko Ivory Teclado Mecánico Gaming Full RGB</p>
+                        <a href="" class="btn-add-cart" data-id="2">add to cart</a>
+                    </div>
+                    <div class="carts">
+                        <div>
+                            <img src="IMG/_af5dc635-cc10-473f-afd1-dce2a3878115.jfif" alt="">
+                            <p><span>15.50</span>$</p>
+                        </div>
+                        <p class="title"> Aukey KM-G16 Teclado Mecánico Gaming Retroiluminado</p>
+                        <a href="" data-id="3" class="btn-add-cart">add to cart</a>
+                    </div>
+                    <div class="carts">
+                        <div>
+                            <img src="IMG/_6dceeeb3-5b93-46a9-beb8-e2e77a6f9e62.jfif" alt="">
+                            <p><span>20.20</span>$</p>
+                        </div>
+                        <p class="title"> Razer Huntsman Elite Teclado Mecánico Gaming RGB</p>
+                        <a href="" data-id="4" class="btn-add-cart">add to cart</a>
+                    </div>
+                    <div class="carts">
+                        <div>
+                            <img src="IMG/_53e37662-deeb-4da8-85db-c2868e94fa24.jfif" alt="">
+                            <p><span>19</span>$</p>
+                        </div>
+                        <p class="title"> Trust GXT 856 Torac Teclado Metálico Gaming RGB</p>
+                        <a href="" data-id="5" class="btn-add-cart">add to cart</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <section class="conteiner-motos">
+        <div class="cont-motos">
+            <h2 class="titulo-motos">MOTOS</h2>
+            <P class="txt-motos">Descubre la libertad sobre dos ruedas con nuestra excepcional gama de motos de motocross. Desde modelos potentes diseñados para desafiar terrenos extremos hasta opciones versátiles que se adaptan a cualquier estilo de conducción, nuestras motos encarnan la esencia pura del motocross</P>
+            <section class="containerProductos">
+                <div class="products">
+                    <div class="carts">
+                        <div>
+                            <img src="IMG/_5e9b8d69-6a72-4f38-8d63-eb4077368bd7.jfif" alt="">
+                            <p><span>20</span>$</p>
+                        </div>
+                        <p class="title">Tempest Cataclysm Combo 3 En 1 Gaming Teclado</p>
+                        <a href="" data-id="1" class="btn-add-cart">add to cart</a>
+                    </div>
+                    <div class="carts">
+                        <div>
+                            <img src="IMG/_eb797015-b1d2-4c10-a2a8-940824a4fe67.jfif" alt="">
+                            <p><span>35</span>$</p>
+                        </div>
+                        <p class="title"> Newskill Suiko Ivory Teclado Mecánico Gaming Full RGB</p>
+                        <a href="" class="btn-add-cart" data-id="2">add to cart</a>
+                    </div>
+                    <div class="carts">
+                        <div>
+                            <img src="IMG/_a158bf95-dbbe-4a0e-8b92-9b0cf7c0120a.jfif" alt="">
+                            <p><span>15.50</span>$</p>
+                        </div>
+                        <p class="title"> Aukey KM-G16 Teclado Mecánico Gaming Retroiluminado</p>
+                        <a href="" data-id="3" class="btn-add-cart">add to cart</a>
+                    </div>
+                    <div class="carts">
+                        <div>
+                            <img src="IMG/_c13eb21a-0b94-4523-b638-7222bbe1a15d.jfif" alt="">
+                            <p><span>20.20</span>$</p>
+                        </div>
+                        <p class="title"> Razer Huntsman Elite Teclado Mecánico Gaming RGB</p>
+                        <a href="" data-id="4" class="btn-add-cart">add to cart</a>
+                    </div>
+                    <div class="carts">
+                        <div>
+                            <img src="IMG/_56e30631-4b16-4de1-91a6-c1aa1a8fe258.jfif" alt="">
+                            <p><span>19</span>$</p>
+                        </div>
+                        <p class="title"> Trust GXT 856 Torac Teclado Metálico Gaming RGB</p>
+                        <a href="" data-id="5" class="btn-add-cart">add to cart</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <section class="conteiner-motos">
+        <div class="cont-motos">
+            <h2 class="titulo-motos">MEJORA</h2>
+            <P class="txt-motos">Transforma tu experiencia de conducción con nuestra gama superior de equipos de motocross en CROSS WORLD. Desde las botas que te llevan a la victoria hasta los cascos que brindan la máxima seguridad y estilo, nuestro equipo de alta calidad está diseñado para potenciar tu rendimiento y llevar tu pasión por el motocross al siguiente nivel. Explora la excelencia en cada detalle, porque en CROSS WORLD, tu aventura merece lo mejor</P>
+            <section class="containerProductos">
+                <div class="products">
+                    <div class="carts">
+                        <div>
+                            <img src="IMG/_0563d021-c792-4664-9fe9-1657c19bdcdd.jfif" alt="">
+                            <p><span>20</span>$</p>
+                        </div>
+                        <p class="title">Tempest Cataclysm Combo 3 En 1 Gaming Teclado</p>
+                        <a href="" data-id="1" class="btn-add-cart">add to cart</a>
+                    </div>
+                    <div class="carts">
+                        <div>
+                            <img src="IMG/_04079376-8960-4132-b3c1-538f70f9f840.jfif" alt="">
+                            <p><span>35</span>$</p>
+                        </div>
+                        <p class="title"> Newskill Suiko Ivory Teclado Mecánico Gaming Full RGB</p>
+                        <a href="" class="btn-add-cart" data-id="2">add to cart</a>
+                    </div>
+                    <div class="carts">
+                        <div>
+                            <img src="IMG/_926b1643-5356-4867-8727-2cb03f5dbf17.jfif" alt="">
+                            <p><span>15.50</span>$</p>
+                        </div>
+                        <p class="title"> Aukey KM-G16 Teclado Mecánico Gaming Retroiluminado</p>
+                        <a href="" data-id="3" class="btn-add-cart">add to cart</a>
+                    </div>
+                    <div class="carts">
+                        <div>
+                            <img src="IMG/_2c43bcf9-af70-490d-87d7-4c59b1c6da58.jfif" alt="">
+                            <p><span>20.20</span>$</p>
+                        </div>
+                        <p class="title"> Razer Huntsman Elite Teclado Mecánico Gaming RGB</p>
+                        <a href="" data-id="4" class="btn-add-cart">add to cart</a>
+                    </div>
+                    <div class="carts">
+                        <div>
+                            <img src="IMG/_634ac955-c6ab-42ad-b7db-8db37e43ca29.jfif" alt="">
+                            <p><span>19</span>$</p>
+                        </div>
+                        <p class="title"> Trust GXT 856 Torac Teclado Metálico Gaming RGB</p>
+                        <a href="" data-id="5" class="btn-add-cart">add to cart</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <section class="conteiner-motos">
+        <div class="cont-motos">
+            <h2 class="titulo-motos">REPUESTO</h2>
+            <P class="txt-motos">Encuentra la confianza en cada repuesto. En nuestra sección de repuestos, ofrecemos piezas de alta calidad diseñadas para potenciar y mantener tu moto en su mejor forma. Ya sea que busques la potencia de un nuevo escape, la fiabilidad de una nueva batería o cualquier otro repuesto esencial, aquí encontrarás lo necesario para que tu motocross nunca deje de rugir con fuerza. Descubre la excelencia en cada detalle y lleva tu experiencia de conducción al máximo nivel con nuestros repuestos de primera calidad en CROSS WORLD</P>
+            <section class="containerProductos">
+                <div class="products">
+                    <div class="carts">
+                        <div>
+                            <img src="IMG/aciento.jpg" alt="">
+                            <p><span>20</span>$</p>
+                        </div>
+                        <p class="title">Tempest Cataclysm Combo 3 En 1 Gaming Teclado</p>
+                        <a href="" data-id="1" class="btn-add-cart">add to cart</a>
+                    </div>
+                    <div class="carts">
+                        <div>
+                            <img src="IMG/chasis-completo.jpeg" alt="">
+                            <p><span>35</span>$</p>
+                        </div>
+                        <p class="title"> Newskill Suiko Ivory Teclado Mecánico Gaming Full RGB</p>
+                        <a href="" class="btn-add-cart" data-id="2">add to cart</a>
+                    </div>
+                    <div class="carts">
+                        <div>
+                            <img src="IMG/kitplasticos.png" alt="">
+                            <p><span>15.50</span>$</p>
+                        </div>
+                        <p class="title"> Aukey KM-G16 Teclado Mecánico Gaming Retroiluminado</p>
+                        <a href="" data-id="3" class="btn-add-cart">add to cart</a>
+                    </div>
+                    <div class="carts">
+                        <div>
+                            <img src="IMG/manubrio.webp" alt="">
+                            <p><span>20.20</span>$</p>
+                        </div>
+                        <p class="title"> Razer Huntsman Elite Teclado Mecánico Gaming RGB</p>
+                        <a href="" data-id="4" class="btn-add-cart">add to cart</a>
+                    </div>
+                    <div class="carts">
+                        <div>
+                            <img src="IMG/llantas.png" alt="">
+                            <p><span>19</span>$</p>
+                        </div>
+                        <p class="title"> Trust GXT 856 Torac Teclado Metálico Gaming RGB</p>
+                        <a href="" data-id="5" class="btn-add-cart">add to cart</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- El pie de página contiene información de contacto, enlaces a redes sociales y un crédito de autoría del sitio web. -->
+    <footer class="pie_pagina">
+        <div class="pie">
+            <h2>Tienes alguna duda?</h2>
+            <p>Si tienes alguna duda, puedes contactarnos en cualquiera de mis redes sociales</p>
+            <div class="footer_social">
+                <a href="#"><img src="ICON/icons8-facebook-500.png"class="footer_img"></a>
+                <a href="#"><img src="ICON/icons8-instagram-500.png"class="footer_img"></a>
+                <a href="#"><img src="ICON/icons8-twitter-500.png"class="footer_img"></a>
+                <a href="#"><img src="ICON/icons8-whatsapp-500.png"class="footer_img"></a>
+            </div>
+            <p>
+                SITIO WEB CREADO POR &copy;MIRKO VARGAS :
+            </p>
+        </div>
+    </footer>
+
+    <!-- Esta sección contiene funciones JavaScript para mostrar y ocultar el carrito de compras, así como un enlace al archivo principal de JavaScript (principal.js). -->
+    <script>
+        function showCart(x){
+            document.getElementById("products-id").style.display = "block";
+        }
+        function closeBtn(){
+             document.getElementById("products-id").style.display = "none";
+        }
+    </script>
+    <script src="principal.js" ></script>
+</body>
+</html>

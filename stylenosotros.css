@@ -1,0 +1,75 @@
+
+/* Estilo del Cuerpo de la Página */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Sección Nosotros */
+.cont-encabezado {
+    padding: 15px 0;
+}
+
+.conteiner-nosotros {
+    position: relative;
+}
+
+/* Imagen con Capa Oscura y Texto Encima */
+.img-overlay {
+    position: relative;
+    display: block;
+}
+
+.img-nosotros {
+    width: 126.5%; 
+    height: auto; /* Para mantener la proporción de la imagen */
+    display: block;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Color del texto, ajusta según tus necesidades */
+    text-align: center;
+}
+
+/* Capa Oscura Sobre la Imagen */
+.img-overlay::before {
+    width: 126.5%;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.5; /* Opacidad de la capa oscura */
+}
+
+/* Sección Banner */
+.banner {
+    background-color: #323232;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    display: block;
+}
+
+/* Sección Nosotros */
+.nosotros-section {
+    background-color: #565555;
+    padding: 50px 0;
+}
+
+.nosotros-section h2 {
+    text-align: center;
+}
+
+/* Información de Contacto */
+.contact-info {
+    margin-top: 30px;
+}
